@@ -52,7 +52,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = numbers.filter(n => n % 2 === 0);
+    const expected = [2, 4];
     // --end->
 
     expect(filtered).toEqual(expected);
@@ -64,7 +64,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = numbers.map((n, i) => `Unit ${n} for element at index ${i}`);
+    const expected = ['Unit 1 for element at index 0', 'Unit 2 for element at index 1', 'Unit 3 for element at index 2', 'Unit 4 for element at index 3', 'Unit 5 for element at index 4'];
     // --end->
 
     expect(mapped).toEqual(expected);
@@ -76,7 +76,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = numbers.reduce((prev, current) => prev + current);
+    const expected = 15;
     // --end->
 
     expect(reduced).toEqual(expected);
