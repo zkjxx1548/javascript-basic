@@ -4,7 +4,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct result. You should write the result directly.
-    const expected = undefined;
+    const expected = array[2];
     // --end->
 
     expect(array[2]).toEqual(expected);
@@ -15,7 +15,7 @@ describe('for array', () => {
 
     // <--start
     // Please write one line of code to push some elements in the array to pass the test
-
+    array.push(6, 7, 8);
     // --end->
 
     expect(array).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
@@ -27,7 +27,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [9].concat(array).concat([10]);
     // --end->
 
     expect(newArray).toEqual(expected);
@@ -38,8 +38,8 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedRow = undefined;
-    const expectedColumn = undefined;
+    const expectedRow = [row, column].shift();
+    const expectedColumn = [row, column].pop();
     // --end->
 
     expect(row).toEqual(expectedRow);
@@ -52,7 +52,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = numbers.filter(n => n % 2 === 0);
     // --end->
 
     expect(filtered).toEqual(expected);
@@ -64,7 +64,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = numbers.map((n, i) => `Unit ${n} for element at index ${i}`);
     // --end->
 
     expect(mapped).toEqual(expected);
@@ -76,7 +76,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = numbers.reduce((prev, current) => prev + current);
     // --end->
 
     expect(reduced).toEqual(expected);
